@@ -1,0 +1,32 @@
+@use '../style.scss' as *;
+
+.banner {
+    @include width-block;
+    position: relative;
+    height: 223px;
+    @include radius-block;
+    overflow: hidden;
+
+    .banner-image {
+        object-fit: cover;
+        filter: brightness(0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-position: center;
+        
+    }
+
+    .banner-text {
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+        position: relative;
+        @include flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        font-size: 48px;
+    }
+}

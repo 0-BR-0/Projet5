@@ -1,13 +1,19 @@
-import Card from "./Card";
+import Card from "./Card.jsx";
+import Logements from "../data/logements.json"
+import "../styles/cardlist.scss"
 
-const Cardlist = () => {
-    console.log("Cardlist")
+function Cardlist() {
     return (
-        <div>
-            <p>Cardlits</p>
-            <Card />
-
-        </div>
+        <section className="cardlist">
+            {Logements.map((logement) => (
+                <Card
+                    key={logement.id}
+                    id={logement.id}
+                    image={logement.cover}
+                    title={logement.title}
+                />
+            ))}
+        </section>
     );
 };
 

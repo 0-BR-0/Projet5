@@ -1,0 +1,21 @@
+footer {
+    height: 209px;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    img {
+        width: 122px;
+    }
+
+    h3 {
+        color: #ffffff;
+        text-align: center;
+    }
+
+
+}

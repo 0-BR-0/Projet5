@@ -1,6 +1,6 @@
-import Banner from "./Banner";
+import Banner from "../../Home/components/Banner";
 
-const AboutBanner = () => {
+function AboutBanner() {
     return (
         <div>
             <Banner

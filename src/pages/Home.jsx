@@ -1,17 +1,15 @@
-import Banner from "../components/Banner"
-import imageAcceuil from "../assets/image/imageAccueil.png"
-import Cardlist from "../components/Cardlist"
+import Banner from "../components/Banner.jsx"
+import imageAcceuil from "/images/imageAccueil.png"
+import Cardlist from "../components/Cardlist.jsx"
+import "../styles/home.scss"
+import Layout from "../components/Layout.jsx"
 
 function Home() {
   return (
-    <div>
-      <Banner
-        imageUrl={imageAcceuil}
-        text="Chez vous, partout et ailleurs"
-      />
-      <p>Accueil</p>
+    <Layout>
+      <Banner image={imageAcceuil} text="Chez vous, partout et ailleurs" />
       <Cardlist />
-    </div>
+    </Layout>
   )
 }
 

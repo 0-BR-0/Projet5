@@ -1,0 +1,117 @@
+@use '../style.scss' as *;
+
+
+.about {
+    margin-top: 170px;
+    margin-left: 80px;
+    margin-bottom: 180px;
+}
+
+.collapse {
+    margin-bottom: 37px;
+}
+
+.collapse-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $kasa-color;
+    border-radius: 5px;
+    display: inline-flex;
+    height: 52px;
+    width: 100%;
+    margin-left: 100px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.collapse-title {
+    font-size: 18px;
+    color: white;
+    margin: 5px 10px;
+    font-weight: 700;
+}
+
+.collapse-vectorDown {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    width: 24px;
+}
+
+.collapse-vectorup-false {
+    width: 24px;
+    margin-right: 10px;
+
+
+
+}
+
+.collapse-vectorup-true {
+    width: 24px;
+    transform: rotate(-180deg);
+    margin-right: 10px;
+
+
+
+}
+
+.collapse-vectorDown.true {
+    justify-content: start;
+    transform: rotate(-180deg);
+    margin-right: 10px;
+
+}
+
+// #collapse-Description 
+.collapse-description {
+    position: relative;
+    background-color: #f7f7f7;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: black;
+    height: auto;
+    width: 100%;
+    line-height: 30px;
+    // margin: 10px;
+    padding: 15px 10px;
+}
+
+#collapse-Équipements .collapse-description {
+    position: relative;
+    background-color: #f7f7f7;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: auto;
+    width: 100%;
+    line-height: 30px;
+    // margin: 10px;
+    padding: 15px 10px;
+
+    li {
+        color: black;
+        text-decoration: none;
+        list-style: none;
+
+    }
+}
+
+
+// @media screen and (max-width: 767px) {
+//     .about {
+//         margin-left: 0px;
+//         margin-top: 135px;
+//     }
+
+//     .collapse-div {
+//         width: 92%;
+//         margin-left: 20px;
+//     }
+
+//     .collapse-description {
+//         width: 92%;
+//         margin-left: 20px;
+//         line-height: 20px;
+//         padding-bottom: 70px;
+//     }
+// }

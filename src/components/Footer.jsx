@@ -1,12 +1,13 @@
-import LogoFooter from '/logofooter.png'
+import LogoFooter from '/images/logofooter.png'
+import "../styles/footer.scss"
+
 function Footer() {
   return (
-    <footer style={{ backgroundColor: "black" }}>
+    <footer>
       <img src={LogoFooter} alt='Logo Footer' />
-      <h3 style={{ color: "white" }}>© 2020 Kasa. All rights reserved</h3>
+      <h3>© 2020 Kasa. All rights reserved</h3>
     </footer>
   )
 }
-
 
 export default Footer
