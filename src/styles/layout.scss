@@ -1,0 +1,28 @@
+@media (max-width: 768px) {
+
+    header {
+
+        margin: 10px;
+
+        .navigation {
+            width: 100%;
+            // flex-direction: column;
+            gap: 5px;
+            margin: 0;
+
+        }
+
+        li {
+            text-align: center;
+            margin: 0;
+
+        }
+
+        .nav-active,
+        .nav-inactive {
+            font-size: 18px;
+            margin: 0;
+
+        }
+    }
+}

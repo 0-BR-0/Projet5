@@ -26,3 +26,17 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .navigation {
+
+        li {
+            text-align: end;
+
+            .nav-active,
+            .nav-inactive {
+                font-size: 18px;
+            }
+        }
+    }
+}

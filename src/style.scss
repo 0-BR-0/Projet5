@@ -44,3 +44,12 @@ $font-family: 'Montserrat', sans-serif;
     max-width: 1240px;
   }
 }
+
+@media (max-width: 768px) {
+
+  header,
+  main {
+
+    padding: 30px;
+  }
+}
