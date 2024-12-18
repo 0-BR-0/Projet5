@@ -1,3 +1,5 @@
+@use '../style.scss' as *;
+
 .errorpage {
     color: #FF6060;
     display: flex;
@@ -7,18 +9,15 @@
     text-align: center;
     gap: 50px;
 
-
     h1 {
         font-size: 288px;
-
     }
 
     p {
         font-size: 36px;
     }
 
-    .lienErrorPage {
+    .errorpage__link {
         color: black;
     }
-
 }

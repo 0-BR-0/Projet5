@@ -1,6 +1,5 @@
 @use '../style.scss' as *;
 
-
 header {
     @include flex;
     justify-content: space-between;
@@ -10,58 +9,5 @@ header {
         height: 68px;
         width: 210px;
         margin: 0;
-        // img {
-        //     height: 68px;
-        //     width: 210px;    
-        // }
     }
-
-
-    .navigation {
-        
-        // @include flex;
-        // display: inline-flex;
-        width: 309px;
-        margin: 0;
-
-
-    
-        // ul {
-            @include flex;
-            // display: inline-flex;
-            align-items: center;
-            list-style-type: none;
-            gap: 50px;
-            // width: 116px;
-
-            li {
-                // width: 116px;
-                text-align: end;
-                // a {
-                //     color: $black;
-
-                // }
-
-                a {
-                    text-decoration: none;
-                    color: $black;
-                    font-size: 24px;
-                    // text-transform: uppercase;
-    
-                    &:hover,
-                    &:active,
-                    &:focus {
-                        text-decoration: underline;
-                    }
-                }
-
-        
-            }
-        
-            
-    
-        // }
-    
-    }
-
 }

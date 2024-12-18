@@ -1,62 +1,55 @@
+@use '../style.scss' as *;
+
 .carrousel {
     position: relative;
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
 
-}
+    &__images {
+        display: flex;
+        transition: transform 0.3s ease;
 
-.carrousel__images {
-    display: flex;
-    transition: transform 0.3s ease;
+        img {
+            width: 100%;
+            max-height: 415px;
+            border-radius: 25px;
+            object-fit: cover;
+            display: block;
+        }
+    }
 
-}
+    &__index {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        font-size: 16px;
+        color: white;
+        font-weight: bold;
+        background: none;
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
 
-.carrousel__index {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    // transform: translateX(-50%);
-    font-size: 16px;
-    color: white;
-    font-weight: bold;
-    background: none;
-    padding: 5px 10px;
-    border-radius: 10px;
-}
+    &__button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 1;
+        font-size: 79px;
+        width: auto;
 
-.carrousel__images img {
-    width: 100%;
-    max-height: 415px;
-    border-radius: 25px;
-    object-fit: cover;
+        &--prev {
+            left: 10px;
+        }
 
-
-    display: block;
-}
-
-.carrousel__button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    color: rgb(255, 255, 255);
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 1;
-    font-size: 79px;
-    width: auto;
-}
-
-.carrousel__button:focus {
-    outline: none;
-}
-
-.carrousel__button--prev {
-    left: 10px;
-}
-
-.carrousel__button--next {
-    right: 10px;
+        &--next {
+            right: 10px;
+        }
+    }
 }

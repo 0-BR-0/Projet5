@@ -1,18 +1,15 @@
 @use '../style.scss' as *;
 
 .stars-div {
-
     margin: 0;
     display: flex;
     justify-content: end;
     gap: 10px;
 
-    .full-star,
-    .empty-star {
+    &__full-star,
+    &__empty-star {
         width: 25px;
         height: 25px;
         margin: 0;
-
-
     }
 }

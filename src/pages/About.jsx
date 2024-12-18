@@ -1,14 +1,8 @@
 import Banner from "../components/Banner.jsx"
 import imageAPropos from "/images/imageAPropos.png"
-import "../styles/banner.scss"
-import "../styles/home.scss"
 import Collapse from "../components/Collapse.jsx"
 import AboutDatas from "../data/about.json"
 import Layout from "../components/Layout.jsx"
-import "../styles/about.scss"
-
-
-
 
 function About() {
     return (

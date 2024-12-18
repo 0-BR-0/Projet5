@@ -7,7 +7,7 @@
     @include radius-block;
     overflow: hidden;
 
-    .banner-image {
+    &__image {
         object-fit: cover;
         filter: brightness(0.5);
         position: absolute;
@@ -16,7 +16,6 @@
         right: 0;
         bottom: 0;
         background-position: center;
-        
     }
 
     .banner-text {

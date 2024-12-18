@@ -1,3 +1,5 @@
+@use '../style.scss' as *;
+
 footer {
     height: 209px;
     background-color: #000000;
@@ -16,6 +18,4 @@ footer {
         color: #ffffff;
         text-align: center;
     }
-
-
 }

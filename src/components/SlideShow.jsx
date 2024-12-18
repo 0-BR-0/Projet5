@@ -21,20 +21,15 @@ function SlideShow({ pictures }) {
                 <img src={pictures[currentIndex]} alt={`Carrousel ${currentIndex}`} />
             </div>
             {!isSingleImage && (
-                <div className="carrousel__index">
+                <><div className="carrousel__index">
                     {currentIndex + 1}/{pictures.length}
-                </div>
-            )}
-            {/* doublon a modif */}
-            {!isSingleImage && (
-                <>
-                    <button className="carrousel__button carrousel__button--prev" onClick={prevImage}>
+                </div><button className="carrousel__button carrousel__button--prev" onClick={prevImage}>
                         &lt;
-                    </button>
-                    <button className="carrousel__button carrousel__button--next" onClick={nextImage}>
+                    </button><button className="carrousel__button carrousel__button--next" onClick={nextImage}>
                         &gt;
                     </button>
                 </>
+
             )}
         </div>
     );

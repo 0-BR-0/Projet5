@@ -8,7 +8,7 @@ function Collapse({ title, description, }) {
 
     return (
         <div className="collapse" id={`collapse-${title}`}>
-            <div className="collapse-div">
+            <div className="collapse__div">
                 <div className="collapse-title">{title}</div>
                 <span
                     className={`collapse-vectorup-${open}`}

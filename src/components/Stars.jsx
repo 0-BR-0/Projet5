@@ -12,14 +12,14 @@ function Stars({ star }) {
             {NumberStars.map((stars) => star >= stars ? (
                 <img
                     key={stars}
-                    className="full-star"
+                    className="stars-div__full-star"
                     src={StarFull}
                     alt="Étoile remplie"
                 />
             ) : (
                 <img
                     key={stars}
-                    className="empty-star"
+                    className="stars-div__empty-star"
                     src={StarGrey}
                     alt="Étoile vide"
                 />

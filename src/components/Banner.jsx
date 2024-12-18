@@ -4,7 +4,7 @@ function Banner({ image, text }) {
     return (
         <div className="banner">
             <div
-                className="banner-image"
+                className="banner__image"
                 style={{
                     backgroundImage: `url(${image})`,
                 }}

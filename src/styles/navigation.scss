@@ -1,25 +1,28 @@
-// @use '../style.scss' as *;
+@use '../style.scss' as *;
 
+.navigation {
+    width: 309px;
+    margin: 0;
+    @include flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 50px;
 
-// .navigation {
-//     @include flex;
+    li {
+        text-align: end;
 
-//     justify-content: flex-end;
-//     align-items: center;
-//     list-style-type: none;
-//     gap: 50px;
+        .nav-active,
+        .nav-inactive {
+            color: $black;
+            font-size: 24px;
+        }
 
-//     ul {
-//         width: 66px;
-//         li {
-//             width: 66px;
-//             a {
-//                 width: 66px;
-        
-//             }
-    
-//         }
+        .nav-active {
+            text-decoration: underline;
+        }
 
-//     }
-
-// }
+        .nav-inactive {
+            text-decoration: none;
+        }
+    }
+}
