@@ -3,11 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ErrorPage from './pages/ErrorPage.jsx'
 import About from './pages/About.jsx'
 import Logement from './pages/Logement.jsx'
-import "./style.scss"
 
 function App() {
   return (
-    <Router>
+    <Router future={{ v7_relativeSplatPath: true }}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

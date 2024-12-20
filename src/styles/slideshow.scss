@@ -1,8 +1,8 @@
-@use '../style.scss' as *;
+@use "./style.scss" as *;
 
 .carrousel {
     position: relative;
-    width: 100%;
+    width: $width-block;
     margin: 0 auto;
     overflow: hidden;
 
@@ -50,6 +50,70 @@
 
         &--next {
             right: 10px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .carrousel {
+        position: relative;
+        width: $width-block;
+        margin: 0 auto;
+        overflow: hidden;
+        height: 255px;
+
+        &__images {
+            display: flex;
+            transition: transform 0.3s ease;
+
+            img {
+                height: 100%;
+                border-radius: 10px;
+                object-fit: cover;
+                display: block;
+                position: absolute;
+            }
+        }
+
+        &__index {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 10px;
+            font-size: 16px;
+            color: white;
+            font-weight: bold;
+            // background: none;
+            padding: 5px 10px;
+            border-radius: 10px;
+            @include flex;
+            flex-direction: column;
+            justify-content: center;
+            width: auto;
+            align-items: center;
+        }
+
+        &__button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 1;
+            font-size: 39px;
+            width: auto;
+
+            &--prev {
+                left: 10px;
+            }
+
+            &--next {
+                right: 10px;
+            }
         }
     }
 }

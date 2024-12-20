@@ -7,12 +7,12 @@ export default defineConfig({
 
   preprocessorOptions: {
     scss: {
-      api: 'legacy', // or "modern-compiler", "modern"
+      api: 'modern-compiler', // or "modern", "legacy"
       importers: [
         // ...
       ],
     },
   },
 
-  
+
 })

@@ -1,4 +1,4 @@
-@use '../style.scss' as *;
+@use "./style.scss" as *;
 
 .host {
     display: flex;
@@ -7,7 +7,7 @@
     gap: 10px;
 
     h1 {
-        color: #ff6060;
+        color: $kasa-color;
         font-size: 18px;
         line-height: 26px;
         max-width: min-content;
@@ -22,4 +22,32 @@
         width: 64px;
         margin: 0;
     }
+}
+
+@media (max-width: 375px) {
+
+    .host {
+        display: flex;
+        margin: 0;
+        gap: 10px;
+        align-items: center;
+
+        h1 {
+            color: $kasa-color;
+            font-size: 18px;
+            line-height: 20px;
+            max-width: min-content;
+            text-align: right;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        &__image {
+            border-radius: 100px;
+            height: 64px;
+            width: 64px;
+            margin: 0;
+        }
+    }
+
 }

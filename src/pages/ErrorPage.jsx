@@ -1,5 +1,5 @@
 import React from 'react';
-import "../styles/errorpage.scss"
+// import "../styles/errorpage.scss"
 import Layout from '../components/Layout.jsx';
 import { Link } from 'react-router-dom';
 

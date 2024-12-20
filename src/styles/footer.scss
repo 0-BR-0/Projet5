@@ -1,8 +1,8 @@
-@use '../style.scss' as *;
+@use "./style.scss" as *;
 
 footer {
     height: 209px;
-    background-color: #000000;
+    background-color: $black;
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -17,5 +17,15 @@ footer {
     h3 {
         color: #ffffff;
         text-align: center;
+    }
+}
+
+@media (max-width: 375px) {
+    footer {
+
+        h3 {
+            font-size: 14px;
+            width: 40%;
+        }
     }
 }

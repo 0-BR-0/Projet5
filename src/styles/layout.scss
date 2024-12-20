@@ -1,28 +1,30 @@
-@media (max-width: 768px) {
+@use "./style.scss" as *;
 
-    header {
+// @media (max-width: 768px) {
 
-        margin: 10px;
+//     header {
 
-        .navigation {
-            width: 100%;
-            // flex-direction: column;
-            gap: 5px;
-            margin: 0;
+//         margin: 10px;
 
-        }
+//         .navigation {
+//             width: $width-block;
+//             // flex-direction: column;
+//             gap: 5px;
+//             margin: 0;
 
-        li {
-            text-align: center;
-            margin: 0;
+//         }
 
-        }
+//         li {
+//             text-align: center;
+//             margin: 0;
 
-        .nav-active,
-        .nav-inactive {
-            font-size: 18px;
-            margin: 0;
+//         }
 
-        }
-    }
-}
+//         .nav-active,
+//         .nav-inactive {
+//             font-size: 18px;
+//             margin: 0;
+
+//         }
+//     }
+// }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import "../styles/titlelogement.scss"
+// import "../styles/titlelogement.scss"
 
 function TitleLogement({ logement, titles, locations }) {
     return (

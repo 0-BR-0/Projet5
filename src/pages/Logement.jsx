@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import React from 'react';
 import Logements from "../data/logements.json"
-import "../styles/logement.scss"
+// import "../styles/logement.scss"
 import ErrorPage from './ErrorPage';
 import SlideShow from '../components/SlideShow';
 import Host from '../components/Host';

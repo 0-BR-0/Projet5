@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../styles/card.scss"
+// import "../styles/card.scss"
 
 function Card({ id, image, title }) {
 

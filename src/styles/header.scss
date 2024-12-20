@@ -1,13 +1,39 @@
-@use '../style.scss' as *;
+@use "./style.scss" as *;
 
 header {
     @include flex;
     justify-content: space-between;
-    margin-top: 20px;
+    padding-top: 45px;
 
     .header-logo {
-        height: 68px;
         width: 210px;
         margin: 0;
+    }
+}
+
+// @media (max-width: 768px) {
+//     header {
+
+//         padding-top: 20px;
+
+//         .header-logo {
+//             width: 145px;
+//             margin: 0;
+//         }
+
+//     }
+// }
+
+@media (max-width: 375px) {
+
+    header {
+
+        padding-top: 20px;
+
+        .header-logo {
+            width: 145px;
+            margin: 0;
+        }
+
     }
 }

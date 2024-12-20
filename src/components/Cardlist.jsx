@@ -1,6 +1,6 @@
 import Card from "./Card.jsx";
 import Logements from "../data/logements.json"
-import "../styles/cardlist.scss"
+// import "../styles/cardlist.scss"
 
 function Cardlist() {
     return (

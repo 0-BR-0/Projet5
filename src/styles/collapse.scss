@@ -1,4 +1,4 @@
-@use '../style.scss' as *;
+@use "./style.scss" as *;
 
 .collapse {
     margin-bottom: 37px;
@@ -49,5 +49,21 @@
         width: 100%;
         line-height: 30px;
         padding: 15px 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .collapse {
+
+        margin-bottom: 20px;
+
+        &__div {
+            height: 35px;
+        }
+
+        .collapse-title {
+            font-size: 16px;
+
+        }
     }
 }

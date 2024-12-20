@@ -1,9 +1,16 @@
-@use '../style.scss' as *;
+@use "./style.scss" as *;
 
 main {
     gap: 50px;
-    display: flex;
+    display: $flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 375px) {
+    main {
+
+        gap: 20px;
+    }
 }

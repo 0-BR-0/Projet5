@@ -1,5 +1,5 @@
 import React from 'react';
-import "../styles/stars.scss"
+// import "../styles/stars.scss"
 import StarFull from "../assets/images/starfull.png";
 import StarGrey from "../assets/images/stargrey.png";
 

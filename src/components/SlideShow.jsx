@@ -1,4 +1,4 @@
-import "../styles/slideshow.scss"
+// import "../styles/slideshow.scss"
 import React, { useState } from 'react';
 
 

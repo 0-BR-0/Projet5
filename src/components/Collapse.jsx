@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import "../styles/collapse.scss"
+// import "../styles/collapse.scss"
 import VectorUp from "../assets/images/vectorup.png"
 
 function Collapse({ title, description, }) {

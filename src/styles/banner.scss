@@ -1,4 +1,4 @@
-@use '../style.scss' as *;
+@use "./style.scss" as *;
 
 .banner {
     @include width-block;
@@ -11,11 +11,8 @@
         object-fit: cover;
         filter: brightness(0.5);
         position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
         background-position: center;
+        height: 100%;
     }
 
     .banner-text {
@@ -27,5 +24,37 @@
         align-items: center;
         height: 100%;
         font-size: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        .banner-text {
+            font-size: 26px;
+
+        }
+    }
+
+}
+
+@media (max-width: 375px) {
+    .banner {
+        @include width-block;
+        position: relative;
+        height: 111px;
+        overflow: hidden;
+        border-radius: 10px;
+
+        .banner-text {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+            position: relative;
+            @include flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            width: 55%;
+            padding-left: 10px;
+        }
     }
 }

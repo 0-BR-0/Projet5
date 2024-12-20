@@ -1,7 +1,7 @@
 import Banner from "../components/Banner.jsx"
 import imageAcceuil from "/images/imageAccueil.png"
 import Cardlist from "../components/Cardlist.jsx"
-import "../styles/home.scss"
+// import "../styles/home.scss"
 import Layout from "../components/Layout.jsx"
 
 function Home() {
